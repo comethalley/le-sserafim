@@ -109,7 +109,6 @@ a:hover:after {
   font-weight: 300;
   padding: 7px 15px;
   border-radius: 3px;
-  margin-top: 8px;
   cursor: pointer;
   transition: background-color 0.25s, color 0.25s;
 }
@@ -143,35 +142,45 @@ a:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px 120px 0px;
-  gap: 25px;
+  padding: 30px 0px 120px 0px;
+  gap: 50px;
 }
 
 .member-info > h2 {
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 900;
   color: black;
 }
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
 }
 
 .card {
-  width: 160px;
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-20px);
 }
 
 .card-image {
-  border: solid 4px #3882f6;
-  border-radius: 15px;
   width: 100%;
-  height: 160px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-info {
+  margin-top: 20px;
   text-align: center;
   font-size: 18px;
   color: #1f2937;
@@ -184,22 +193,22 @@ a:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 250px;
+  padding: 50px 50px;
 }
 
 .quote > p {
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 300;
-  color: #1f2937;
+  font-size: 24px;
+  font-weight: 200;
+  color: black;
+  text-align: justify;
 }
 
 #remarks {
-  align-self: flex-end;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 500;
   font-style: normal;
-  color: #1f2937;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .sign-up-section {
@@ -207,7 +216,7 @@ a:hover:after {
 }
 
 .sign-up-banner {
-  background-color: #3882f6;
+  background-color: #a6282a;
   color: white;
   padding: 50px 120px;
   border-radius: 8px;
@@ -216,25 +225,31 @@ a:hover:after {
 }
 
 .call {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.dodok {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .sign-up-button-light {
-  border: solid 2px white;
-  color: #f9faf8;
+  border: none;
+  color: black;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 8px;
   padding: 7px 40px;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #3882f6;
+  background-color: white;
   transition: background-color 0.15s, color 0.15s;
 }
 
 .sign-up-button-light:hover {
-  background-color: #f9faf8;
-  color: #3882f6;
+  background-color: black;
+  color: white;
 }
 
 .footer {
